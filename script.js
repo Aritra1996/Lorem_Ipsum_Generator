@@ -6,8 +6,8 @@ function generate() {
             document.getElementById("result").innerHTML = this.responseText
         }
     }
-    let num = document.getElementById("num_of_para").value
-    document.getElementById("num_of_para").value = ""
+    let num = document.getElementById("num_of_sentence").value
+    document.getElementById("num_of_sentence").value = ""
     let url = "https://baconipsum.com/api/?type=all-meat&format=text&sentences=" + num 
     xhttp.open("GET", url, true)
     xhttp.send()
